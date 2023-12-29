@@ -1,6 +1,6 @@
 # Library Management System Overview
 
-This Library Management System is a comprehensive application designed to simulate the functionalities of an online library. It enables users to log in, browse and search for library items, borrow and return them, and view their current loans. The system is equipped with a server that manages the library's catalog and user transactions, ensuring real-time updates and concurrency handling. Additionally, it offers advanced features like librarian-specific functionalities, real-time chat, item hold and renewal options, and a user-friendly interface for an engaging library experience. This project serves as a practical embodiment of key computer science concepts, focusing on user interaction and efficient data management in a library setting.
+A comprehensive application designed to simulate the functionalities of an online library. It enables users to log in, browse and search for library items, borrow and return them, and view their current loans. The system is equipped with a server that manages the library's catalog and user transactions, ensuring real-time updates and concurrency handling. Additionally, it offers advanced features like librarian-specific functionalities, real-time chat, item hold and renewal options, and a user-friendly interface for an engaging library experience. This project serves as a practical embodiment of key computer science concepts, focusing on user interaction and efficient data management in a library setting.
 
 ## Programmer's Guide
 
