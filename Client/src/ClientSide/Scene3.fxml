@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientSide.GUIController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/background2.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="255.0" layoutY="41.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Open Book Library " AnchorPane.topAnchor="11.0">
+         <font>
+            <Font name="Verdana" size="30.0" />
+         </font>
+      </Text>
+      <HBox layoutX="15.0" layoutY="60.0" prefHeight="497.0" prefWidth="702.0" spacing="10.0" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <VBox spacing="10.0" style="-fx-background-color: #b5c9e8;">
+               <children>
+                  <Label text="Search Catalog:">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin></Label>
+                  <HBox spacing="10.0">
+                     <children>
+                        <TextField fx:id="searchTextField">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin></TextField>
+                        <Button fx:id="searchButton" mnemonicParsing="false" text="Search">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin></Button>
+                     </children>
+                  </HBox>
+                  <Label text="Catalog:">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin></Label>
+                  <ListView fx:id="catalogListView" prefHeight="300.0" prefWidth="200.0" xmlns:items="fx:reference Book" />
+                  <Button fx:id="borrowButton" mnemonicParsing="false" text="Borrow Item">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" />
+                     </VBox.margin></Button>
+               </children>
+            </VBox>
+            <VBox spacing="10.0" style="-fx-background-color: #b5c9e8;">
+               <children>
+                  <Label text="Your Checked-out Items:">
+                     <VBox.margin>
+                        <Insets left="17.0" top="10.0" />
+                     </VBox.margin></Label>
+                  <ListView fx:id="checkedOutItemsListView" prefHeight="300.0" prefWidth="200.0" xmlns:items="fx:reference Book" />
+                  <Button fx:id="returnButton" mnemonicParsing="false" text="Return Item">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin></Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="444.0" prefWidth="225.0" spacing="10.0" style="-fx-background-color: #b5c9e8;">
+               <children>
+                  <Label fx:id="bookTitleLabel" text="Title:">
+                     <VBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </VBox.margin></Label>
+                  <Label fx:id="bookAuthorLabel" text="Author: ">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin></Label>
+                  <Label fx:id="bookPagesLabel" text="Pages: ">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin></Label>
+                  <Label fx:id="bookDescriptionLabel" text="Description: ">
+                     <VBox.margin>
+                        <Insets left="5.0" />
+                     </VBox.margin></Label>
+                  <ImageView fx:id="bookCoverImageView" fitHeight="200.0" fitWidth="150.0" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="35.0" top="50.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@images/BookCover.jpg" />
+                     </image></ImageView>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Button fx:id="scene1Button" layoutX="711.0" layoutY="547.0" mnemonicParsing="false" onAction="#switchToScene1" text="Logout" />
+      <Button fx:id="exitButton" layoutX="745.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitProgram" text="Exit" textFill="#e80404" />
+
+   </children>
+</AnchorPane>
