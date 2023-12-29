@@ -25,7 +25,7 @@ The project is divided into client-side, server-side, and common code.
 
 To start the server locally, run the `Server.java` file. The server listens on a specified port and handles incoming connections. Make sure the server-side dependencies, such as MongoDB, are installed and configured correctly.
 
-*Developer: Boris He bdh2778*
+*Developer: Boris He*
 
 ## User's Guide
 
@@ -56,4 +56,4 @@ To start the server locally, run the `Server.java` file. The server listens on a
 - Due dates to auto return (1)
 - Password encryption (2)
 - Run from Jar (1)
-- Created own Commons jar?
+- Created own Commons jar
